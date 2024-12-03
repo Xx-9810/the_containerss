@@ -1,0 +1,67 @@
+-<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Restaurante [Nombre del Restaurante]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Contacto</h1>
+
+    <div class="info">
+        <p><strong>Dirección:</strong> The Containers, Periferico Oriente 54, Iztapalapa, México</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.0920541649393!2d-99.07599422494158!3d19.32181138193409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce016c8bf60303%3A0xbf5b7ad00a3a0efc!2sThe%20Containers!5e0!3m2!1ses-419!2smx!4v1731098264219!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p><strong>Reservas:</strong> +52 56-2670-0829</p>
+        <p><strong>Email:</strong> thecontainersgrill@gmail.com</p>
+        <p><strong>Horario:</strong> Lunes a Miércoles 1:00 PM - 11:00 PM</p>
+        <p>- Jueves 1:00 PM - 1:00 AM</p>
+        <p>- Viernes y Sábado 1:00 PM - 2:00 AM</p>
+        <p>- Domingo 1:00 PM - 9:00 PM</p>
+    </div>
+
+    <div class="contact-box">
+        <h2>Envíanos tu opinión</h2>
+        <form id="contact-form" onsubmit="return sendEmail(event)">
+            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" id="email" placeholder="Tu correo electrónico" required>
+            <textarea name="mensaje" id="mensaje" placeholder="Cuentanos tu experiencia en containers" rows="6" required></textarea>
+            <button type="submit" class="btn-1">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Botón Inicio -->
+    <div class="button-container">
+        <a href="index.html" class="btn-1">Inicio</a>
+    </div>
+
+    <!-- Botón Reserva -->
+    <div class="button-container">
+        <a href="https://api.whatsapp.com/send?phone=+525626700829&text=Buen%20d%C3%ADa,%20me%20interesa%20*reservar%20una%20mesa*%20%C2%BFPodr%C3%ADas%20ayudarme?" class="btn-1">Reserva</a>
+    </div>
+
+    <!-- Enlaces Redes Sociales -->
+    <div class="social-links">
+    <a href="https://www.facebook.com/thecontainers" aria-label="Facebook" target="_blank" rel="noopener noreferrer" style="--color: #557dbc; --background-color: transparent;" class="ast-builder-social-element ast-inline-flex ast-facebook footer-social-item"><span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28"  viewBox="0 0 448 512"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg></span></a>
+
+      <a href="https://www.instagram.com/thecontainers/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" style="--color: #8a3ab9; --background-color: transparent;" class="ast-builder-social-element ast-inline-flex ast-instagram footer-social-item"><span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 448 512"><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"></path></svg></span></a>
+
+      <a href="https://goo.gl/maps/25PawUYruMxim1STA" aria-label="Google" reviews="" target="_blank" rel="noopener noreferrer" style="--color: #dc4e41; --background-color: transparent;" class="ast-builder-social-element ast-inline-flex ast-google_reviews footer-social-item"><span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28"><title id="google_reviews"> Google Reviews </title><path d="M12 12.281h11.328c.109.609.187 1.203.187 2C23.515 21.125 18.921 26 11.999 26c-6.641 0-12-5.359-12-12s5.359-12 12-12c3.234 0 5.953 1.188 8.047 3.141L16.78 8.282c-.891-.859-2.453-1.859-4.781-1.859-4.094 0-7.438 3.391-7.438 7.578s3.344 7.578 7.438 7.578c4.75 0 6.531-3.406 6.813-5.172h-6.813v-4.125z"></path></svg></span></a>
+    </div>
+</div>
+
+<script>
+    function sendEmail(event) {
+        event.preventDefault();
+
+        alert("Gracias por tu opinión :)");
+
+        document.getElementById("contact-form").reset();
+    }
+</script>
+
+</body>
+</html>
+
